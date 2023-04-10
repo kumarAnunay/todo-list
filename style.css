@@ -1,4 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid black;
+    background: linear-gradient(#f28383, #b3b8ec);
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px black;
+    height: 300px;
+    width: 500px;
+    margin: 50px 0px;
+    background-image: url("image1.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+span{
+    position: relative;
+    right: 200px;
+}
+
+.label4{
+    margin-left: 90px;
+}
+
+input{
+    margin-bottom: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    width: 95%;
+}
+
+button{
+    width: 100px;
+    padding: 8px 5px;
+    margin-top: 10px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px rgba(121, 121, 121, 0.65);
+}
+
+button:active {
+    /* Push the button down */
+    transform: translate(0, 3px);
+  
+    /* Reduce the box shadow */
+    box-shadow: 0 3px rgba(255, 255, 255, 0.65);
+  }
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    min-height: 200px;
+    margin-bottom: 50px;
+    background-color: #0666a1;
+    box-shadow: 0 0 5px 2px black;
+}
+
+.userContainer{
+    margin: 20px 0;
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid #f28383;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.deleteBtn, .editBtn{
+    margin: 10px 5px;
 }

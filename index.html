@@ -11,14 +11,14 @@
 
     <div id="container">
 
-        <div id="form-input">
-            <form>
-                <input type="text" placeholder="Enter your name" />
-                <input type="tel" placeholder="Enter your number" />
-                <button type="submit">todo</button>
-            </form>
+        <div id="input-container">
+            <span class="label1">Name</span><input type="text" placeholder="   Enter your name" id="name" />
+            <span class="label2">Age</span><input type="text" placeholder="   Enter your age" id="age" />
+            <span class="label3">City</span><input type="text" placeholder="   Enter your city" id="city" />
+            <span class="label4">Mobile Number</span><input type="tel" placeholder="   Enter your number" id="number" minlength="10" maxlength="10"/>
+            <button type="submit" onclick="todoHandler()">Add to list</button>
         </div>
-
+        <h1>List</h1>
         <div id="content">
             
         </div>
