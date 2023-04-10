@@ -13,8 +13,7 @@ function todoHandler() {
     else {
         appendData(user);
     }
-    console.log(user);
-
+    // console.log(user);
 }
 
 
@@ -51,9 +50,9 @@ function appendData(user) {
     let editBtn = document.createElement("button");
     editBtn.innerHTML = "Edit";
     editBtn.classList.add("editBtn");
-    editBtn.addEventListener("click", () => {
+    editBtn.addEventListener("click", (e) => {
         editValues();
-    })
+    });
 
     btnContainer.append(deleteBtn);
     btnContainer.append(editBtn);
@@ -73,6 +72,14 @@ function editValues() {
     let updatedAge = prompt("Enter correct Age");
     let updatedCity = prompt("Enter correct City");
     let updatedNumber = prompt("Enter correct Number");
+
+    let user = {
+        name: updatedName,
+        age: updatedAge,
+        city: updatedCity,
+        number: updatedNumber
+    }
+    appendData(user);
 
 }
 
