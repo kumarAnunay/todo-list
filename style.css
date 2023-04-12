@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
 #container {
@@ -24,7 +25,7 @@
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 0 0 5px 2px black;
-  min-height: 300px;
+  min-height: 320px;
   width: 500px;
   margin: 50px 0px;
   background-image: url("image1.avif");
@@ -55,7 +56,6 @@ input {
 button {
   width: 100px;
   padding: 8px 5px;
-  margin-top: 10px;
   font-weight: 700;
   border: none;
   border-radius: 10px;
