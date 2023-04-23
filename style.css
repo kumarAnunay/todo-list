@@ -14,7 +14,7 @@
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(#f28383, #b3b8ec);
-    border: 10px solid black;
+  border: 10px solid black;
 }
 
 #input-container {
@@ -36,15 +36,6 @@
   font-weight: 700;
 }
 
-span {
-  position: relative;
-  right: 200px;
-}
-
-.label4 {
-  margin-left: 90px;
-}
-
 input {
   margin-bottom: 10px;
   height: 30px;
@@ -64,15 +55,12 @@ button {
 }
 
 button:active {
-  /* Push the button down */
   transform: translate(0, 3px);
-
-  /* Reduce the box shadow */
   box-shadow: 0 3px rgba(255, 255, 255, 0.65);
 }
 
-.list{
-    display: none !important;
+.list {
+  display: none !important;
 }
 
 #content {
@@ -107,4 +95,60 @@ button:active {
 .deleteBtn,
 .editBtn {
   margin: 15px 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #input-container {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  #content {
+    min-width: 90%;
+    font-size: 16px;
+  }
+
+  .userContainer {
+    margin: 10px 0;
+  }
+
+  .deleteBtn,
+  .editBtn {
+    margin: 10px 5px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #input-container {
+    width: 80%;
+  }
+
+  #content {
+    min-width: 80%;
+  }
+
+  .userContainer {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  input {
+    font-size: 14px;
+  }
+
+  .userContainer {
+    font-size: 16px;
+  }
+
+  .label4 {
+    display: none;
+  }
 }
